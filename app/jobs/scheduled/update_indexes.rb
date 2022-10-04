@@ -2,7 +2,7 @@
 
 module Jobs
   class UpdateIndexes < ::Jobs::Scheduled
-    every 5.minutes
+    every 1.minutes
 
     def execute(args)
       DiscourseAlgolia.process!
